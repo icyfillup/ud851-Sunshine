@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadWeatherData()
     {
         //String location = "91776";
+        //String location = "";
         String location = SunshinePreferences.getPreferredWeatherLocation(MainActivity.this);
         Log.d(TAG, location.toString());
         new NetworkTask().execute(location);
